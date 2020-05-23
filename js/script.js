@@ -18,39 +18,21 @@ function randomNumber (multiplier) {
 
 // Inspiration
 
-function inspire() {
-  let randomQuote = randomNumber(9);
-  let quote = "";
+const quotes = {
+  0: "You are beautiful!",
+  1: "You can do it!",
+  2: "How did you get so cool?!?",
+  3: "Thanks for all that you do!",
+  4: "Keep up the great work!",
+  5: "You're the best!",
+  6: "You got the power!",
+  7: "Yes!!!!",
+  8: "I believe in you!"
+}
 
-  switch (randomQuote) {
-    case 0:
-      quote = "You are beautiful!";
-      break;
-    case 1:
-      quote = "You can do it!";
-      break;
-    case 2:
-      quote = "How did you get so cool?!?";
-      break;
-    case 3:
-      quote = "Thanks for all that you do!";
-      break;
-    case 4:
-      quote = "Keep up the great work!";
-      break;
-    case 5:
-      quote = "You're the best!";
-      break;
-    case 6:
-      quote = "You got the power!";
-      break;
-    case 7:
-      quote = "Yes!!!!";
-      break;
-    case 8:
-      quote = "I believe in you!";
-      break;
-  }
+function inspire() {
+  let randomQuote = randomNumber(Object.keys(quotes).length);
+  let quote = quotes[randomQuote];
   
   var niceWords = document.getElementById("niceWords");
   var niceWordsText = document.getElementById("niceWordsText");
