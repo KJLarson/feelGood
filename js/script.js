@@ -17,16 +17,24 @@ function randomNumber (multiplier) {
 // }
 
 const quotes = {
-  0: "You are beautiful!",
-  1: "You can do it!",
-  2: "How did you get so cool?!?",
-  3: "Thanks for all that you do!",
-  4: "Keep up the great work!",
-  5: "You're the best!",
-  6: "You got the power!",
-  7: "Yes!!!!",
-  8: "I believe in you!"
-}
+  0: "\"Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.\"<br><br>- Marilyn Monroe",
+  1: "\"Do what you can, with what you have, where you are.\"<br><br>- Theodore Roosevelt",
+  2: "\"Success is not final, failure is not fatal: it is the courage to continue that counts.\"<br><br>- Winston S.Churchill",
+  3: "\"It’s no use going back to yesterday, because I was a different person then.\"<br><br>- Lewis Carroll",
+  4: "\"When I was a boy and I would see scary things in the news, my mother would say to me, 'Look for the helpers.You will always find people who are helping.'\"<br><br>- Fred Rogers",
+  5: "\"Nothing is impossible, the word itself says 'I'm possible'!\"<br><br>- Audrey Hepburn",
+  6: "\"Everything has beauty, but not everyone can see.\"<br><br>- Confucius",
+  7: "\"Tough times never last. Tough people do.\"<br><br>- Robert Schuller",
+  8: "\"If you get up one more time than you fall, you will make it through.\"<br><br>- Chinese proverb",
+  9: "\"Whatever you’re feeling, be good to yourself. If you feel lost, be patient with yourself while you find your way. If you feel scared, be gentle with yourself while you find the strength to face your fear. If you feel hurt, be kind to yourself while you grieve and slowly heal. You can’t bully yourself into clarity, courage, or peace, and you can’t rush self-discovery or transformation. Some things simply take time, so take the pressure off and give yourself space to grow.\"<br><br>- Lori Deschene",
+  10: "\"A moment of self-compassion can change your entire day. A string of such moments can change the course of your life.\"<br><br>- Christopher K. Germer",
+  11: "\"I don’t think of all the misery, but of the beauty that still remains.\"<br><br>- Anne Frank",
+  12: "\"I've got some bad news and I've got some good news. Nothing lasts forever.\"<br><br>- Kate McGahan",
+  13: "\"Sometimes you need a little crisis to get your adrenaline flowing and help you realise your potential.\"<br><br>- Jeannette Walls",
+  14: "\"If you want others to be happy, practice compassion. If you want to be happy, practice compassion.\"<br><br>- Dalai Lama",
+  15: "\"Some days there won’t be a song in your heart. Sing anyway.\"<br><br>- Emory Austin",
+  16: "\"An inconvenience is only an adventure wrongly considered.\"<br><br>- G. K. Chesterton"
+};
 
 const jokes = {
   0: "A horse walks into a bar.<br><br>The bartender says, 'Hey.'<br><br>The horse replies, 'Sure.'",
@@ -45,7 +53,7 @@ const jokes = {
   13: "If you ever get cold, stand in the corner of a room for a while.<br><br>They're usually 90 degrees.",
   14: "Q: If you have 10 apples in one hand and 14 oranges in the other, what do you have?<br><br>A: Really, really big hands.",
   15: "Q: What do Alexander the Great and Winnie the Pooh have in common?<br><br>A: Same middle name."
-}
+};
 
 // Inspiration
 
