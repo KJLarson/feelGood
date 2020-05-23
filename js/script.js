@@ -50,8 +50,7 @@ const jokes = {
 // Inspiration
 
 function inspire() {
-  let randomQuote = randomNumber(Object.keys(quotes).length);
-  let quote = quotes[randomQuote];
+  let quote = quotes[randomNumber(Object.keys(quotes).length)];
   
   var niceWords = document.getElementById("niceWords");
   var niceWordsText = document.getElementById("niceWordsText");
@@ -69,8 +68,7 @@ function inspire() {
 // Jokes
 
 function laugh() {
-  let randomJoke = randomNumber(Object.keys(jokes).length);
-  let joke = jokes[randomJoke];
+  let joke = jokes[randomNumber(Object.keys(jokes).length)];
 
   var funnyWords = document.getElementById("funnyWords");
   var funnyWordsText = document.getElementById("funnyWordsText");
