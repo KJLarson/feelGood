@@ -37,6 +37,10 @@ nav a{
 
 /* Instructions */
 
+h1 {
+  margin: 10px;
+}
+
 #instructions {
   margin-bottom: 25px;
   display: flex;
@@ -56,7 +60,7 @@ button {
   border: none;
   border-radius: 1rem;
   padding: 1rem 1.5rem;
-  margin: 0;
+  margin: 10px 0;
   text-decoration: none;
   background: #0069ed;
   color: #ffffff;
