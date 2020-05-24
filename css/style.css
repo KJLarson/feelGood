@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-size: 1rem;
-  background-color: #C0C5CE;
+  background-color: #dcdcdc;
 }
 
 
@@ -37,6 +37,10 @@ nav a{
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
+}
+
+nav a:visited {
+  color: black;
 }
 
 p {
@@ -60,7 +64,7 @@ h1 {
 }
 
 h1, #instructions p {
-  color: #343d46;
+  color: black;
 }
 
 /* Button */
@@ -100,7 +104,7 @@ button:active {
 /* Nice Words and Jokes */
 
 #niceWords, #funnyWords {
-  background-color: rgba(144, 255, 130, 0.726);
+  /* background-color: rgba(144, 255, 130, 0.726); */
   padding: 2rem;
   font-weight: bold;
   border-radius: 1rem;
@@ -108,29 +112,26 @@ button:active {
   max-width: 600px;
   text-align: center;
   flex: 1;
+  /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
 }
 
 /* #niceWordsText {
   
 } */
 
-.clouds {
-  font-family: 'Chewy', cursive;
-  color: #1a237e;
-  font-size: 70px;
-  letter-spacing: 5px;
-  text-shadow: 2px 2px #2196f3,
-    -2px -2px #2196f3,
-    2px -2px #2196f3,
-    -2px 2px #2196f3,
-    5px 5px #90caf9,
-/*     -5px -5px #90caf9,
-    -5px 5px #90caf9, */
-    5px -5px #90caf9,
-    8px 8px #e3f2fd,
-    -8px -8px #e3f2fd,
-    -8px 8px #e3f2fd,
-    8px -8px #e3f2fd;
+.blueGreen {
+  background-image: linear-gradient(to right top, #051937, #00395b, #005962, #007644, #628c02);
+  color: white;
+}
+
+.redBlue {
+  background-image: linear-gradient(120deg, #AC3317, #130669);
+  color: white;
+}
+
+.redGrayBlue {
+  background-image: linear-gradient(-119deg, #338EBF, #915667);
+  color: white;
 }
 
 .red {
