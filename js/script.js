@@ -2,20 +2,6 @@ function randomNumber (multiplier) {
   return Math.floor(Math.random() * multiplier);
 }
 
-// function style() {
-//   let randomStyle = randomNumber(4);
-//   let styleClass;
-
-//   switch (randomStyle) {
-//     case 0:
-//       styleClass = "clouds";
-//       break;
-//     case 1:
-//       styleClass = "red";
-//       break;
-//   }
-// }
-
 const quotes = {
   0: "\"Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.\"<br><br>- Marilyn Monroe",
   1: "\"Do what you can, with what you have, where you are.\"<br><br>- Theodore Roosevelt",
@@ -55,21 +41,29 @@ const jokes = {
   15: "Q: What do Alexander the Great and Winnie the Pooh have in common?<br><br>A: Same middle name."
 };
 
+const styles = {
+  0: "blueGreen",
+  1: "redBlue",
+  2: "redGrayBlue"
+}
+
+var button = document.getElementById("button");
+var niceWords = document.getElementById("niceWords");
+var niceWordsText = document.getElementById("niceWordsText");
+var funnyWords = document.getElementById("funnyWords");
+var funnyWordsText = document.getElementById("funnyWordsText");
+
+
 // Inspiration
+
 
 function inspire() {
   let quote = quotes[randomNumber(Object.keys(quotes).length)];
-  
-  var niceWords = document.getElementById("niceWords");
-  var niceWordsText = document.getElementById("niceWordsText");
-  var button = document.getElementById("button");
 
   niceWordsText.innerHTML = quote;
   niceWords.classList.remove("hideWords");
   niceWords.classList.add("showWords");
-  // niceWords.classList.add(style());
 
-  
   button.innerHTML = 'Get More Nice Words';
 }
 
@@ -78,13 +72,15 @@ function inspire() {
 function laugh() {
   let joke = jokes[randomNumber(Object.keys(jokes).length)];
 
-  var funnyWords = document.getElementById("funnyWords");
-  var funnyWordsText = document.getElementById("funnyWordsText");
-  var button = document.getElementById("button");
-
   funnyWordsText.innerHTML = joke;
   funnyWords.classList.remove("hideWords");
   funnyWords.classList.add("showWords");
 
   button.innerHTML = 'Another Joke';
+}
+
+// Styles
+
+function style() {
+  let randomStyle = styles[randomNumber(Object.keys(styles).length)];
 }
