@@ -21,18 +21,28 @@ body {
   background-color: #C0C5CE;
 }
 
+
+
 /* Navigation */
 
 nav {
   display: flex;
   justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 nav a{
   text-decoration: none;
   padding: 10px;
   cursor: pointer;
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  margin: 10px 0;
+  max-width: 600px;
 }
 
 /* Instructions */
@@ -95,6 +105,7 @@ button:active {
   font-weight: bold;
   border-radius: 1rem;
   width: 100%;
+  max-width: 600px;
   text-align: center;
   flex: 1;
 }
