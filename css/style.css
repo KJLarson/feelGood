@@ -103,7 +103,8 @@ button:active {
 
 /* Nice Words and Jokes */
 
-#niceWords, #funnyWords {
+/* #niceWords, #funnyWords */
+ #feelBetter {
   /* background-color: rgba(144, 255, 130, 0.726); */
   padding: 2rem;
   font-weight: bold;

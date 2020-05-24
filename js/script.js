@@ -48,10 +48,11 @@ const styles = {
 }
 
 var button = document.getElementById("button");
-var niceWords = document.getElementById("niceWords");
+// var niceWords = document.getElementById("niceWords");
 var niceWordsText = document.getElementById("niceWordsText");
-var funnyWords = document.getElementById("funnyWords");
+// var funnyWords = document.getElementById("funnyWords");
 var funnyWordsText = document.getElementById("funnyWordsText");
+var feelBetter = document.getElementById("feelBetter");
 
 
 // Inspiration
@@ -61,8 +62,10 @@ function inspire() {
   let quote = quotes[randomNumber(Object.keys(quotes).length)];
 
   niceWordsText.innerHTML = quote;
-  niceWords.classList.remove("hideWords");
-  niceWords.classList.add("showWords");
+  // niceWords.classList.remove("hideWords");
+  // niceWords.classList.add("showWords");
+  feelBetter.classList.remove("hideWords");
+  feelBetter.classList.add("showWords");
 
   button.innerHTML = 'Get More Nice Words';
 }
@@ -73,8 +76,10 @@ function laugh() {
   let joke = jokes[randomNumber(Object.keys(jokes).length)];
 
   funnyWordsText.innerHTML = joke;
-  funnyWords.classList.remove("hideWords");
-  funnyWords.classList.add("showWords");
+  // funnyWords.classList.remove("hideWords");
+  // funnyWords.classList.add("showWords");
+  feelBetter.classList.remove("hideWords");
+  feelBetter.classList.add("showWords");
 
   button.innerHTML = 'Another Joke';
 }
